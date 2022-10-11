@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- preloader ========================-->
+  <div class="preloader">
+    <img src="img/preloader.gif" alt="preloader" class="preloader__item" />
+  </div>
+
+<!-- sidenav ========================-->
+<button class="sidebar-toggle">
+  <i class="fas fa-bars"></i>
+</button>
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <img src="img/2.jpg" class="logo" alt="" />
+    <button class="close-btn"><i class="fas fa-times"></i></button>
+  </div>
+  <!-- links -->
+  <ul class="links list-unstyled">
+    <li>
+      <a href="index.html">home</a>
+    </li>
+    <li>
+      <a href="about.html">about</a>
+    </li>
+    <li>
+      <a href="projects.html">projects</a>
+    </li>
+    <li>
+      <a href="contact.html">contact</a>
+    </li>
+  </ul>
+  <!-- social media -->
+  <ul class="social-icons list-unstyled">
+    <li>
+      <a href="https://www.twitter.com">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com">
+        <i class="fab fa-behance"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com">
+        <i class="fab fa-sketch"></i>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+
+<!-- header======================================= -->
+  <header class="header">
+    <video  muted autoplay loop class="video-container">
+      <source src="img/video.mp4" type="video/mp4" />
+    </video>
+    <h1>video project</h1>
+    <!-- video switch -->
+    <button class="switch-btn">
+      <span>
+        play
+      </span>
+      <span>
+        pause
+      </span>
+      <span class="switch"></span>
+    </button>
+  </header>
+ 
+<!-- colorCode ==========================================================-->
+
+ <section class="my-5" id="colorCode">
+     <p style="height:3rem ;" class=" font-weight-bolder h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">radom color code</p>
+    <div id="randomColor" class="  d-flex justify-content-center text-center align-items-center">
+      <div>
+          <h2 class=" h1 mb-3 bg-light  text-capitalize  p-4 fw-bolder"> random color code : <span class="color text-info ">#09a23c</span> </h2>
+          <button class=" bg-warning text-capitalize  mt-3 btn btn-light font-weight-bolder" id="colorBtn"> genrate random color  </button>
+          
+      </div>
+    </div>  
+    </section>
+
+
+    <!-- // counter--------------------------------------------------------------- -->
+
+    <section>
+     <p style="height:3rem ;" class=" font-weight-bolder h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">Counter</p>   
+    
+  <div class=" bg-light bg-opacity-50 row justify-content-center align-items-center" style="height: 75vh;">
+     <div class= " col-md-6 bg-secondary bg-opacity-10  shadow  py-4  text-center">
+         <h2 class=" bg-secondary bg-opacity-10 p-5 h1">Counter</h2>
+         <h5 id="counter" class="p-3  h1 mb-3">0</h5>
+          <a id="conterBtn" type="button" class=" decBtn px-4 py-2 rounded-pill mx-1 user-select-auto btn btn-outline-danger" >decrese</a>
+          <a id="conterBtn" type="button" class=" restBtn px-4 py-2 rounded-pill mx-1 btn btn-outline-info" >rest</a>
+          <a id="conterBtn" type="button" class=" incBtn px-4 py-2 rounded-pill  mx-1 btn btn-outline-success" >incerse</a>
+        
+       </div>     
+  </div>
+    </section>
+
+    <!-- // our review--------------------------------------------------------------- -->
+<section>
+    <p style="height:3rem ;" class=" font-weight-bolder h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">Our Review</p>   
+
+<article class=" pt-5 px-3" >
+  <h2 class="  text-center mb-5 ">ou<span class=" border-bottom border-2 border-info">r revi</span>ew</h2>
+
+<div class=" row justify-content-center align-items-center text-center">
+ <div  class=" px-md-4 w-md-50 py-4 shadow">
+     <img  src="" style="width: 8rem; height: 8rem;" id="reviewImg" class="mb-2 rounded-circle border border-2 border-warning" alt="">
+     <h4 class=" py-2" id="reviewName" ></h4>
+     <h4 class=" py-2"  id="reviewJob" ></h4>
+     <p class=" py-2"  id="reviewDes" ></p>
+     <a id="pre" type="button" class=" btn btn-secondary "> previce</a>
+
+     <a id="next" type="button" class=" btn btn-secondary "> next</a>
+
+ </div>
+ 
+</div>
+
+
+
+</article>
+</section>
+
+<section class=" py-5 ">
+  <p style="height:3rem ;" class=" font-weight-bolder h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">Q&A</p>   
+
+<div class=" pt-5 container">
+  
+    <article class="question  ">
+      <div class="question-title">
+        <p>do you suppport local farmers?</p>
+        <button type="button" class="question-btn">
+          <span class="plus-icon">
+            <i class="far fa-plus-square"></i>
+          </span>
+          <span class="minus-icon">
+            <i class="far fa-minus-square"></i>
+          </span>
+        </button>
+      </div>
+      <div class="question-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+          dolore illo dolores quia nemo doloribus quaerat, magni numquam
+          repellat reprehenderit.
+        </p>
+      </div>
+    </article>
+    <article class="question ">
+      <div class="question-title">
+        <p>do you suppport local farmers?</p>
+        <button type="button" class="question-btn">
+          <span class="plus-icon">
+            <i class="far fa-plus-square"></i>
+          </span>
+          <span class="minus-icon">
+            <i class="far fa-minus-square"></i>
+          </span>
+        </button>
+      </div>
+      <div class="question-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+          dolore illo dolores quia nemo doloribus quaerat, magni numquam
+          repellat reprehenderit.
+        </p>
+      </div>
+    </article>
+    <article class="question ">
+      <div class="question-title">
+        <p>do you suppport local farmers?</p>
+        <button type="button" class="question-btn">
+          <span class="plus-icon">
+            <i class="far fa-plus-square"></i>
+          </span>
+          <span class="minus-icon">
+            <i class="far fa-minus-square"></i>
+          </span>
+        </button>
+      </div>
+      <div class="question-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+          dolore illo dolores quia nemo doloribus quaerat, magni numquam
+          repellat reprehenderit.
+        </p>
+      </div>
+    </article>
+  
+</div>
+</section>
+
+<!-- menu ============================== -->
+<section>
+  <p style="height:3rem ;" class=" font-weight-bolder mb-5 h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">menu with locl data</p>   
+
+
+  <div id="btnFilter" class="btn-container py-3  border-bottom border-3 border-warning container text-center text-capitalize">
+    <!-- <button type="button" class="btn btn-outline-warning text-black btn-filter " data-id="all">all</button>
+    <button type="button" class="btn btn-outline-warning text-black btn-filter  " data-id="breakfast">
+      breakfast
+    </button>
+    <button type="button" class="btn btn-outline-warning text-black btn-filter  " data-id="lunch">lunch</button>
+    <button type="button" class="btn btn-outline-warning text-black  btn-filter " data-id="shakes">
+      shakes
+    </button> -->
+  </div>
+  <div class="section-center my-5 ">
+    <!-- single item -->
+    <article class="menu-item">
+      <img src="" alt="menu item" class="photo "  />
+      <div class="item-info">
+        <header>
+          <h4>buttermilk pancakes</h4>
+          <h4 class="price">$15</h4>
+        </header>
+        <p class="item-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+          laboriosam excepturi! Quo, officia.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- menu ============================== -->
+<section>
+  <p style="height:3rem ;" class=" font-weight-bolder mb-5 h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">menu with locl data</p>   
+  <section class="section">
+    <div class=" text-center">
+      <h2>about</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+        aperiam!
+      </p>
+    </div>
+
+    <div class="about-center row section-center">
+      <article class="about-img col-12">
+        <img src="img/hero-bcg.jpeg" class="w-100" alt="" />
+      </article>
+      <article class="about">
+        <!-- btn container -->
+        <div class="row bg-light ">
+          <button class="tab-btn btn btn-outline-secondary col-4 active" data-id="history">history</button>
+          <button class="tab-btn btn btn-outline-secondary col-4 " data-id="vision">vision</button>
+          <button class="tab-btn btn btn-outline-secondary col-4 " data-id="goals">goals</button>
+        </div>
+        <div class="about-content mt-4 bg-light p-3">
+          <!-- single item -->
+          <div class="content active" id="history">
+            <h4 class=" lead">history</h4>
+            <p class=" lead ">
+              I'm baby wolf pickled schlitz try-hard normcore marfa man bun
+              mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
+              rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
+              tilde try-hard, woke fixie banjo man bun. Small batch tumeric
+              mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
+              direct trade hoodie ugh chambray, craft beer pork belly flannel
+              tacos single-origin coffee art party migas plaid pop-up.
+            </p>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="content" id="vision">
+            <h4 class=" lead">vision</h4>
+            <p class=" lead">
+              Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+              crucifix offal deep v hella biodiesel. Church-key listicle
+              polaroid put a bird on it chillwave palo santo enamel pin,
+              tattooed meggings franzen la croix cray. Retro yr aesthetic four
+              loko tbh helvetica air plant, neutra palo santo tofu mumblecore.
+              Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
+              Roof party hammock master cleanse pop-up truffaut, bicycle
+              rights skateboard affogato readymade sustainable deep v
+              live-edge schlitz narwhal.
+            </p>
+            <ul class=" lead">
+              <li>list item</li>
+              <li>list item</li>
+              <li>list item</li>
+            </ul>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="content" id="goals">
+            <h4  class=" lead"  >goals</h4>
+            <p  class=" lead">
+              Chambray authentic truffaut, kickstarter brunch taxidermy vape
+              heirloom four dollar toast raclette shoreditch church-key.
+              Poutine etsy tote bag, cred fingerstache leggings cornhole
+              everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
+              swag, mixtape hashtag marfa readymade direct trade man braid
+              cold-pressed roof party. Small batch adaptogen coloring book
+              heirloom. Letterpress food truck hammock literally hell of wolf
+              beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
+              banh mi salvia venmo photo booth quinoa chicharrones.
+            </p>
+          </div>
+          <!-- end of single item -->
+        </div>
+      </article>
+    </div>
+  </section>
+</section>
+
+<!-- downcounter ================================== -->
+<p style="height:3rem ;" class=" font-weight-bolder mb-5 h4 text-capitalize mb-0 text-light p-2 text-center bg-dark">menu with locl data</p>   
+
+<section class="section-center">
+  <!-- image -->
+  <article class="gift-img ">
+    <img src="img/gift.jpeg" class="w-100 " alt="gift" />
+  </article>
+  <!-- info -->
+  <article class="gift-info">
+    <h3>old iphone giveaway</h3>
+    <h4 class="giveaway">
+      giveaway ends on Sunday, 24 April 2020, 8:00am
+    </h4>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Reprehenderit molestiae cum libero atque ut voluptate qui consectetur
+      aliquid incidunt voluptatem quos, dolore, non commodi quaerat aliquam
+      eligendi, quisquam totam blanditiis.
+    </p>
+    <div class="deadline">
+      <!-- days -->
+      <div class="deadline-format">
+        <div>
+          <h4 class="days">34</h4>
+          <span>days</span>
+        </div>
+      </div>
+      <!-- end of days -->
+      <!-- days -->
+      <div class="deadline-format">
+        <div>
+          <h4 class="hours">34</h4>
+          <span>hours</span>
+        </div>
+      </div>
+      <!-- end of days -->
+      <!-- minutes -->
+      <div class="deadline-format">
+        <div>
+          <h4 class="minutes">34</h4>
+          <span>mins</span>
+        </div>
+      </div>
+      <!-- end of days -->
+      <!-- minutes -->
+      <div class="deadline-format">
+        <div>
+          <h4 class="seconds">34</h4>
+          <span>secs</span>
+        </div>
+      </div>
+      <!-- end of days -->
+    </div>
+  </article>
+</section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
